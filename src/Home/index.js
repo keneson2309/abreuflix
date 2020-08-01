@@ -1,11 +1,11 @@
 import React from 'react';
-import Menu from './components/Menu';
-import dadosIniciais from './data/dados_iniciais.json';
-import BannerMain from './components/BannerMain';
-import Carrossel from './components/Carousel';
-import Rodapé from './components/Footer';
+import Menu from '../components/Menu';
+import dadosIniciais from '../data/dados_iniciais.json';
+import BannerMain from '../components/BannerMain';
+import Carrossel from '../components/Carousel';
+import Rodapé from '../components/Footer';
 
-function App() {
+function Home() {
   return (
     <div style ={{ background :"#141414"}}>
 
@@ -18,27 +18,27 @@ function App() {
 
 < Carrossel
         ignoreFirstVideo
-        category = { dadosIniciais . categorias [0] }
+        category={dadosIniciais.categorias[0]}
       />
 
       < Carrossel
-        category = { dadosIniciais . categorias [1] }
+        category={dadosIniciais.categorias[1]}
       />
 
       < Carrossel
-        category = { dadosIniciais . categorias [2] }
+        category={dadosIniciais.categorias[2]}
       />      
 
       < Carrossel
-        category = { dadosIniciais . categorias [3] }
+        category={dadosIniciais.categorias[3]}
       />      
 
       < Carrossel
-        category = { dadosIniciais . categorias [4] }
+        category={dadosIniciais.categorias[4]}
       />      
 
       < Carrossel
-        category = { dadosIniciais . categorias [5] }
+        category={dadosIniciais.categorias[5]}
       />      
 
       < Rodapé />
@@ -50,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
